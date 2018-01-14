@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Data" representedClassName="Data" syncable="YES" codeGenerationType="class"/>
+    <entity name="ArticleCollection" representedClassName="ArticleCollection" syncable="YES" codeGenerationType="class">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="News" syncable="YES"/>
+        <relationship name="pagination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pagination" syncable="YES"/>
+    </entity>
     <entity name="News" representedClassName="News" syncable="YES" codeGenerationType="class">
         <attribute name="chapo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
@@ -25,8 +28,8 @@
         </userInfo>
     </entity>
     <elements>
-        <element name="Pagination" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="ArticleCollection" positionX="-36" positionY="90" width="128" height="75"/>
         <element name="News" positionX="-54" positionY="9" width="128" height="195"/>
-        <element name="Data" positionX="-36" positionY="90" width="128" height="45"/>
+        <element name="Pagination" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
