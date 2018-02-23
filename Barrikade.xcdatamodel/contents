@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ArticleCollection" representedClassName="ArticleCollection" syncable="YES" codeGenerationType="class">
         <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="News" syncable="YES"/>
+        <relationship name="pagination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pagination" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="boucle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selff" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="id"/>
+        </userInfo>
+    </entity>
+    <entity name="EventCollection" representedClassName="EventCollection" syncable="YES" codeGenerationType="class">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" syncable="YES"/>
         <relationship name="pagination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pagination" syncable="YES"/>
     </entity>
     <entity name="News" representedClassName="News" syncable="YES" codeGenerationType="class">
@@ -31,5 +53,7 @@
         <element name="ArticleCollection" positionX="-36" positionY="90" width="128" height="75"/>
         <element name="News" positionX="-54" positionY="9" width="128" height="195"/>
         <element name="Pagination" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="EventCollection" positionX="-45" positionY="72" width="128" height="75"/>
+        <element name="Event" positionX="-27" positionY="90" width="128" height="240"/>
     </elements>
 </model>
