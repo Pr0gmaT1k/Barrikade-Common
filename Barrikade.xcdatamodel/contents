@@ -35,6 +35,7 @@
             </userInfo>
         </attribute>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_rubrique" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="selff" optional="YES" attributeType="String" syncable="YES">
             <userInfo>
@@ -61,7 +62,7 @@
         <element name="ArticleCollection" positionX="-36" positionY="90" width="128" height="75"/>
         <element name="Event" positionX="-27" positionY="90" width="128" height="240"/>
         <element name="EventCollection" positionX="-45" positionY="72" width="128" height="75"/>
-        <element name="News" positionX="-54" positionY="9" width="128" height="195"/>
+        <element name="News" positionX="-54" positionY="9" width="128" height="210"/>
         <element name="Pagination" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
