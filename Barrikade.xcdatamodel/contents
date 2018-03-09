@@ -7,13 +7,21 @@
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="boucle" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="descriptionn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionn" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="description"/>
+            </userInfo>
+        </attribute>
         <attribute name="end" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endDayName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="selff" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selff" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="self"/>
+            </userInfo>
+        </attribute>
         <attribute name="start" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDayName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
